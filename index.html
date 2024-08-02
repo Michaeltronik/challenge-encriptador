@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div class="contenedor__interfaz__general">
+            <section class="contenedor__interfaz__encriptacion">
+                <div class="contendor__encriptacion__entrada">
+
+                    <div class="titulo__encriptador__de__texto">
+                        <img src="img/alura.png" alt="logo alura" class="logo">
+                        <h1>Encriptador de texto </h1>
+                    </div>
+                    <textarea name="ingreso__de__texto" id="inputText"
+                        placeholder="Introduce aquí el texto a Encriptar o Desencriptar"></textarea>
+                </div>
+                <div class="requerimiento">
+                    <img src="/img/exclamacion.jpg" alt="icono signo de exclamacion" width="30px" height="30px">
+                    <p class="infoEntrada">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="contendor__interfaz__encriptacion__botones">
+                    <button type="button" class="button">Encriptar</button>
+                    <button type="button" class="button">Desencriptar</button>
+                </div>
+
+            </section>
+            <section class="contenedor__interfaz__encriptacion__salida">
+                <img src="/img/detective1.png" alt="dibujo detective descifrador" class="imagen__salida"
+                id="imagenSalida">
+            <h2 id="mensajeNoEncontrado">Ningun mensaje fue encontrado</h2>
+            <p id="escribeTexto">Escribe el texto que quieres encriptar o desencriptar</p>
+            <textarea id="outputBox" readonly placeholder="none"></textarea>
+            <button  class="button" type="button" id="copiar">Copiar</button>
+            <button  class="button" type="button" id="borrar">Limpiar</button>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

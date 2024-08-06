@@ -71,7 +71,7 @@ function desencriptarTexto() {
     // document.getElementById('inputText').value='';
 
     actualizarIntefaz();
-
+     valido=true;
     return textoDesencriptado;
   } else {
     alert(

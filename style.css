@@ -1,5 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
+:root{
+    --color_primario:rgb(129, 236, 213);
+    --color-secundario:white;
+    --color-terciario:rgb(194, 194, 194);
+    --color-botones:rgb(71, 28, 0); 
+    --color-hover:rgb(39, 16, 0);
+    --fuente-Anton:"Anton", sans-serif;
+    --fuente-Black_Ops:"Black Ops One", system-ui;
+    
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -14,9 +25,9 @@ body {
 
 .titulo__encriptador__de__texto {
 
-    color: rgb(129, 236, 213);
+    color:var(--color_primario);
     font-size: 2rem;
-    font-family: "Anton", sans-serif;
+    font-family: var(--fuente-Anton);
     font-weight: 400;
     display: flex;
     padding: 10px 0;
@@ -61,7 +72,7 @@ textarea {
 
     box-sizing: border-box;
     background: radial-gradient(circle, rgb(60, 160, 218), rgb(18, 75, 136), rgb(0, 0, 0));
-    color: white;
+    color: var(--color-secundario);
     width: 100%;
     height: 100%;
     min-height: 400px;
@@ -90,7 +101,7 @@ textarea {
     font-weight: bold;
     font-size: 1.3rem;
     margin: 7px;
-    color: rgb(194, 194, 194);
+    color: var(--color-terciario);
 }
 
 .contenedor__interfaz__encriptacion__botones {
@@ -107,10 +118,10 @@ textarea {
     border-radius: 20px;
     width: 100%;
     height: auto;
-    color: rgb(71, 28, 0);
+    color: var(--color-botones);
     padding: 15px 80px;
     text-align: center;
-    font-family: "Black Ops One", system-ui;
+    font-family: var(--fuente-Black_Ops);
     font-size: 1.2rem;
     margin: 4px 2px;
     cursor: pointer;
@@ -125,14 +136,14 @@ textarea {
 .button:hover {
 
     background: radial-gradient(circle, rgba(250, 253, 85, 0.893), rgba(208, 104, 0, 0.882), rgb(72, 34, 1));
-    color: rgb(39, 16, 0);
+    color: var(--color-hover);
     cursor: pointer;
 }
 
 #estiloBotonDesencriptar:hover {
 
     background: radial-gradient(circle, rgba(255, 255, 243, 0.942), rgba(83, 82, 81, 0.915), rgba(4, 4, 4, 0.91));
-    color: rgb(39, 16, 0);
+    color: var(--color-hover);
 }
 
 .contenedor__interfaz__encriptacion__salida {
@@ -158,16 +169,16 @@ textarea {
 #mensajeNoEncontrado {
 
     font-size: 2rem;
-    color: rgb(129, 236, 213);
+    color:var(--color_primario);
     justify-content: center;
-    font-family: "Black Ops One", system-ui;
+    font-family: var(--fuente-Black_Ops);
     font-weight: 400;
 }
 
 #escribeTexto {
 
     font-size: 1.5rem;
-    color: rgb(194, 194, 194);
+    color: var(--color-terciario);
     justify-content: center;
     font-weight: bold;
 }
@@ -175,10 +186,12 @@ textarea {
 #copiar {
 
     display: none;
+    /*Inicialmente oculto */
 }
 
 #borrar {
     display: none;
+    /*Inicialmente oculto */
 }
 
 #outpuText {
@@ -198,9 +211,9 @@ textarea {
     justify-content: center;
     gap: 20px;
     align-items: center;
-    font-family: "Black Ops One", system-ui;
+    font-family: var(--fuente-Black_Ops);
     font-weight: 400;
-    color: rgb(129, 236, 213);
+    color:var(--color_primario);
 
 }
 

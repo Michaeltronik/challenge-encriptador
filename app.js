@@ -1,12 +1,12 @@
 
 function validarTexto(texto){
-    const  regex = /^[a-z\s]*$/;
+    const  regex = /^[a-z\s]*$/; //expresion regular solo minusculas y espacios
     return regex.test(texto);
 }
 
 
 function encriptarTexto() {
-  let texto = document.getElementById("inputText").value.trim();
+  let texto = document.getElementById("inputText").value.trim(); //elimina espacios al inicio y final y obtiene el texto ingresado
   
   if (texto === '') {
     alert("Lo siento, no se ha detectado un texto");
@@ -87,8 +87,8 @@ function desencriptarYMostrarResultado() {
    // console.log("Resultado desencriptado:", textoDesencriptado);
     outputText.value=textoDesencriptado;
 }
-
-function verificarEntradaDeTexto(){
+//validar si el textarea esta en blanco para mostrar la imagen
+function verificarEntradaDeTexto(){                                      
     let texto = document.getElementById("inputText").value;
     let outputText = document.getElementById('outputText');
     let textoEstado = document.getElementById('mensajeNoEncontrado');
@@ -122,7 +122,7 @@ async function copiarTexto(){
         console.error('Error al copiar al portapapeles:', err);
       }
 }
-
+// si se ha encriptado texto, muestra el resultado y quita la imagen y habilita los botones de copiar y limpiar
 function actualizarIntefaz(){
     let textoEstado = document.getElementById('mensajeNoEncontrado');
     let solicitudTexto= document.getElementById('escribeTexto')

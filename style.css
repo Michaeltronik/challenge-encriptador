@@ -6,6 +6,7 @@
 }
 
 body {
+
     box-sizing: border-box;
     background-image: url(img/FONDO.png);
     height: 100vh;
@@ -25,12 +26,14 @@ body {
 }
 
 .logo {
+
     margin-left: 10px;
     width: 120px;
     height: 60px;
 }
 
 .contenedor__interfaz__general {
+
     width: 90%;
     height: auto;
     display: flex;
@@ -40,6 +43,7 @@ body {
 }
 
 .contenedor__interfaz__encriptacion {
+
     width: 900px;
     height: auto;
     display: flex;
@@ -48,11 +52,13 @@ body {
 }
 
 .contendor__encriptacion__entrada {
+
     width: 100%;
     height: auto;
 }
 
 textarea {
+
     box-sizing: border-box;
     background: radial-gradient(circle, rgb(60, 160, 218), rgb(18, 75, 136), rgb(0, 0, 0));
     color: white;
@@ -67,6 +73,7 @@ textarea {
 }
 
 #outputText {
+
     box-sizing: border-box;
     font-size: 1rem;
     height: auto;
@@ -75,6 +82,7 @@ textarea {
 }
 
 .requerimiento {
+
     align-items: center;
     display: flex;
     margin-left: 20px;
@@ -86,6 +94,7 @@ textarea {
 }
 
 .contenedor__interfaz__encriptacion__botones {
+
     justify-content: center;
     display: flex;
     gap: 15px;
@@ -93,6 +102,7 @@ textarea {
 }
 
 .button {
+
     background: radial-gradient(circle, rgba(250, 253, 85, 0.668), rgba(208, 104, 0, 0.668), rgba(72, 34, 1, 0.86));
     border-radius: 20px;
     width: 100%;
@@ -107,21 +117,26 @@ textarea {
 }
 
 #estiloBotonDesencriptar {
+
     background: radial-gradient(circle, rgba(255, 255, 243, 0.793), rgba(83, 82, 81, 0.7), rgba(4, 4, 4, 0.76));
+
 }
 
 .button:hover {
+
     background: radial-gradient(circle, rgba(250, 253, 85, 0.893), rgba(208, 104, 0, 0.882), rgb(72, 34, 1));
     color: rgb(39, 16, 0);
     cursor: pointer;
 }
 
 #estiloBotonDesencriptar:hover {
+
     background: radial-gradient(circle, rgba(255, 255, 243, 0.942), rgba(83, 82, 81, 0.915), rgba(4, 4, 4, 0.91));
     color: rgb(39, 16, 0);
 }
 
 .contenedor__interfaz__encriptacion__salida {
+
     width: 580px;
     height: 600px;
     display: flex;
@@ -134,12 +149,14 @@ textarea {
 }
 
 .imagen__salida {
+
     max-width: 60%;
     height: auto;
     object-fit: contain;
 }
 
 #mensajeNoEncontrado {
+
     font-size: 2rem;
     color: rgb(129, 236, 213);
     justify-content: center;
@@ -148,6 +165,7 @@ textarea {
 }
 
 #escribeTexto {
+
     font-size: 1.5rem;
     color: rgb(194, 194, 194);
     justify-content: center;
@@ -155,18 +173,24 @@ textarea {
 }
 
 #copiar {
+
     display: none;
 }
 
 #borrar {
     display: none;
 }
+
 #outpuText {
+
     width: 100%;
     min-height: 300px;
-    display: none;  /*Inicialmente oculto */
+    display: none;
+    /*Inicialmente oculto */
 }
+
 .footer {
+
     display: flex;
     width: 100%;
     height: 50px;
@@ -184,17 +208,20 @@ textarea {
 @media (max-width: 1440px) {
 
     .contenedor__interfaz__encriptacion {
+
         width: auto;
         height: auto;
         margin: 2%;
     }
 
     .contendor__encriptacion__entrada {
+
         width: 100%;
         height: auto;
     }
 
     .contenedor__interfaz__encriptacion__salida {
+
         width: 70%;
         height: auto;
         margin: 2%;
@@ -202,6 +229,7 @@ textarea {
 }
 
 @media (max-width: 1024px) {
+
     .contenedor__interfaz__general {
         width: 100%;
         height: auto;
@@ -211,6 +239,7 @@ textarea {
     }
 
     .titulo__encriptador__de__texto {
+
         font-size: 1.7rem;
         padding: 8px 0;
     }
@@ -238,6 +267,7 @@ textarea {
 
 @media (max-width: 768px) {
     .contenedor__interfaz__general {
+
         width: 90%;
         height: auto;
         flex-direction: column;
@@ -247,6 +277,7 @@ textarea {
     }
 
     .titulo__encriptador__de__texto {
+
         font-size: 1rem;
     }
 
@@ -276,6 +307,7 @@ textarea {
 }
 
 @media (max-width: 480px) {
+
     .titulo__encriptador__de__texto {
         font-size: 1.2rem;
     }

@@ -50,7 +50,7 @@ else{
 function encriptarYMostrarResultado() {
     let outputText = document.getElementById('outputText');
     let textoEncriptado=encriptarTexto();
-    console.log(textoEncriptado);
+   // console.log(textoEncriptado);
     outputText.value= textoEncriptado;
     
 }
@@ -84,7 +84,7 @@ function desencriptarTexto() {
 function desencriptarYMostrarResultado() {
     let outputText = document.getElementById('outputText');
     let textoDesencriptado=desencriptarTexto();
-    console.log("Resultado desencriptado:", textoDesencriptado);
+   // console.log("Resultado desencriptado:", textoDesencriptado);
     outputText.value=textoDesencriptado;
 }
 

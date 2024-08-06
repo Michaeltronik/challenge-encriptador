@@ -22,11 +22,7 @@ body {
     background-image: url(img/FONDO.png);
     height: 100vh;
 }
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
+
 .titulo__encriptador__de__texto {
 
     color:var(--color_primario);

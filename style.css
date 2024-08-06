@@ -162,7 +162,11 @@ textarea {
 #borrar {
     display: none;
 }
-
+#outpuText {
+    width: 100%;
+    min-height: 300px;
+    display: none;  /*Inicialmente oculto */
+}
 .footer {
     display: flex;
     width: 100%;
@@ -196,8 +200,6 @@ textarea {
         height: auto;
         margin: 2%;
     }
-
-
 }
 
 @media (max-width: 1024px) {
@@ -228,6 +230,7 @@ textarea {
     textarea {
         min-height: 150px;
     }
+
     .imagen__salida {
         max-width: 65%;
     }
@@ -251,7 +254,6 @@ textarea {
     .button {
         padding: 8px 60px;
         font-size: 1rem;
-
     }
 
     .imagen__salida {
@@ -282,12 +284,9 @@ textarea {
     .button {
         padding: 4px 30px;
         font-size: 1rem;
-
     }
 
     .imagen__salida {
         max-width: 60%;
     }
-
-
 }
